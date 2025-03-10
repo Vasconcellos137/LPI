@@ -1,0 +1,50 @@
+//3.Algoritmo Classificação Triângulo – Elaborar um algoritmo em fluxograma que leia os três
+//lados de um triângulo e classifique-o como sendo:
+//• Equilátero: possui os três lados iguais; isósceles
+//• Isósceles: possui pelo menos dois lados iguais;
+//• Escaleno: três lados distintos.
+
+import java.util.Scanner; //Biblioteca java..
+
+public class IF {
+    final static Scanner LER = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        // Conjunto de varial para a execusão de métodos..
+        String resultado = " ";
+        resultado = verificarLado();
+        imprimir(resultado);
+
+    }
+
+    // Método que verifica os lados..
+    public static String verificarLado() {
+        String varialTipo = " "; // Varial gaveta de resul..
+
+        double ladoUm = lerNumDouble(); // utilizando comando/método para ler a variável..
+        double ladoDois = lerNumDouble();
+        double ladoTres = lerNumDouble();
+
+        // "else if" é como se fosse um "elif"..
+        if ((ladoUm == ladoDois) && (ladoDois == ladoTres)) {
+            varialTipo = "Equilátero";
+        } else if ((ladoUm == ladoDois) || (ladoDois == ladoTres) || (ladoTres == ladoUm)) {
+            varialTipo = "Isósceles";
+        } else {
+            varialTipo = "Escaleno";
+        }
+        return varialTipo;
+    }
+
+    // Método para imprimir o resul..
+    public static void imprimir(String x) {
+        System.out.println(x);
+
+    }
+
+    // Método genério para ler variáveis do tipo double..
+    public static double lerNumDouble() {
+        double x = LER.nextDouble();
+        return x;
+    }
+}
