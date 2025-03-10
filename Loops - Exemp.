@@ -1,0 +1,27 @@
+public class ExemploLoop {
+
+    public static void main(String[] args) {
+        while (condition) { // Enquanto for vdd..
+
+        }
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+        while (true) { // Faça enquanto vdd, porém com break..
+            break;
+        }
+        //////////////////////////////////////////////////////////////////////////////////////////////
+        do { // "faça"..
+
+        } while (true); // E se continua vdd, repita..
+
+        //////////////////////////////////////////////////////////////////////////////////////////////
+
+        for (int i = 0; i < array.length; i++) { // "fori" - Serve para percorrer vetores, matrizes e como loop c/
+                                                 // contador.
+                                                 // "array.length" - Vetor, comando p/ define.
+                                                 // "array" - Nome del vetor. //.length - tamanho. - Comando geral.
+        }
+        //////////////////////////////////////////////////////////////////////////////////////////////
+
+    }
+
+}
