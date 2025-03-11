@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class tarefa_2582 {
+    final static Scanner LER = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int x = 0;
+        int y = 0;
+
+        int c = 0;
+        c = LER.nextInt();
+
+        int soma = 0;
+
+        String[] vetorInt = {"PROXYCITY","P.Y.N.G.","DNSUEY!","SERVERS","HOST!","CRIPTONIZE","OFFLINE DAY","SALT","ANSWER!","RAR?","WIFI ANTENNAS"};
+
+        for (int i = 0; i < c; i++) {
+            x = LER.nextInt();
+            y = LER.nextInt();
+            soma = x + y;
+
+            String musicName = vetorInt[soma];
+
+            System.out.println(musicName);
+        }
+    }
+}
