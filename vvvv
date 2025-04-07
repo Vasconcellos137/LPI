@@ -1,0 +1,70 @@
+// import java.util.Scanner;
+
+// public class Dp1_loops{
+
+// final static Scanner LER = new Scanner(System.in);
+//     public static void main(String[] args) {
+
+//         int n = LER.nextInt(); // casos
+//         for(int i = 0; i > n; i++){
+//             int x = LER.nextInt(); // numros
+
+
+//         }
+ 
+
+
+//         }
+
+
+// }
+
+////////////////////////////////////////////////////////////////////////////////////
+
+import java.util.Scanner;
+
+public class Lesmas{
+
+final static Scanner LER = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        
+
+
+        while(LER.hasNext()){
+
+            System.out.println("N° de Lesmas");
+            int lesmas = LER.nextInt();
+
+            int velocMax = 0;
+
+            /**for i in range (0, lesmas) */
+            for(int i = 0; i< lesmas; i++){
+
+                int velocidade = LER.nextInt();
+
+                if (velocidade > velocMax) {
+                    velocMax = velocidade;
+                }
+
+            //Niveis
+                int nivel = 0;
+
+                if (velocidade < 10) {
+                    nivel = 1;
+                } else if (velocidade >= 10 && velocidade < 20){
+                    nivel = 2;
+                } else {
+                    nivel = 3;
+                }
+
+                System.out.println("Nível:" + nivel);
+
+                }
+
+            System.out.println("Lesma mais rápida:" + velocMax);
+
+            }
+        } 
+    }
+
